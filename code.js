@@ -8,7 +8,7 @@ grid.classList.add('grid');
 
 
 
-grid.setAttribute('style', 'display: grid; grid-template-columns: repeat(4, 20px);');    
+grid.setAttribute('style', 'display: grid; grid-template-columns: repeat(4, 32px);');    
 
 
 
@@ -16,7 +16,7 @@ grid.setAttribute('style', 'display: grid; grid-template-columns: repeat(4, 20px
 for(let i=0; i<16; i++) {
     var box = document.createElement('div');
     box.classList.add('box'); 
-    box.setAttribute('style', 'background-color: black; width: 30px ; height: 30px ;');    
+    box.setAttribute('style', 'border: 1px solid black; width: 30px ; height: 30px ;');
     grid.appendChild(box);
 }
 
