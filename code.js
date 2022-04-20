@@ -5,15 +5,12 @@ const container = document.querySelector('#container');
 const grid = document.createElement('div');
 grid.classList.add('grid'); 
 
-
-
-
-grid.setAttribute('style', 'display: grid; grid-template-columns: repeat(4, 32px);');    
+grid.setAttribute('style', 'display: grid; grid-template-columns: repeat(15, 32px);');    
 
 
 
 
-for(let i=0; i<16; i++) {
+for(let i=0; i<225; i++) {
     var box = document.createElement('div');
     box.classList.add('box'); 
     box.setAttribute('style', 'border: 1px solid black; width: 30px ; height: 30px ;');
