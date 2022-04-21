@@ -1,1 +1,16 @@
 Use grid layout to creat grid https://www.w3schools.com/css/css_grid.asp
+
+Toggle with and without pen using classList.toggle() or classList.replace() -> onclick
+
+
+clear.addEventListener("click", function() {
+
+    console.log('line 1')
+
+    const boxes = document.querySelectorAll('h1');
+
+    boxes.style.backgroundColor = 'red' ;
+
+    console.log('clear all is clicked');
+})
+
