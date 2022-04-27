@@ -2,18 +2,20 @@
 // Creating container to hold grid and boxes
 const container = document.querySelector('#container');
 
-// Create grid
-const grid = document.createElement('div');
-grid.classList.add('grid'); 
-grid.setAttribute('style', 'display: grid; width:400px ; height: 400px; grid-template-columns: repeat(15 , 1fr);'); 
-
-
-
 /*
 class="slider" 
 */
-let slider = document.getElementById("dimensions");
+let slider = document.getElementById("dimensions").value;
 console.log(slider.value);
+
+// Create grid
+const grid = document.createElement('div');
+grid.classList.add('grid'); 
+grid.setAttribute('style', `display: grid; width:400px ; height: 400px; grid-template-columns: repeat(${slider} , 1fr);`); 
+
+
+
+
 
 
 
@@ -25,11 +27,11 @@ Set up intial grid
 - if amouse passes over box its bckground is changed to orange
 */
 
-for(let i=0; i<225; i++) {
+for(let i=0; i<(slider*slider); i++) {
     let box = document.createElement('div');
 
     box.classList.add('box'); 
-    box.setAttribute('style', 'border: 1px solid black; width: 24.67px ; height: 24.67px;');
+    box.setAttribute('style', `border: 1px solid black; width: ${Math.round(400/slider) - 2}px ; height: ${Math.round(400/slider) - 2}px;`);
     grid.appendChild(box);
 }
 container.appendChild(grid);
