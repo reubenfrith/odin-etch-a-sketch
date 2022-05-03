@@ -31,9 +31,6 @@ function blackPen() {
 const black_pen = document.querySelector('#black_pen');
 black_pen.addEventListener("click", () => blackPen());
 
-// load the black pen when the user loads the web page
-window.onload = blackPen();
-
 /* RAINBOW PEN
 
 Same as Black pen however when changing a box background color a random color is chosen from the randomColor function
@@ -182,3 +179,6 @@ slider.addEventListener('change', (e) => {
     gridSize.textContent = `${sliderValue} x ${sliderValue}`
   
 });
+
+// load the black pen when the user loads the web page
+window.addEventListener('load', blackPen());
