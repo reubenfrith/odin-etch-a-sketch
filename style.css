@@ -3,5 +3,93 @@ body    {
     flex-direction: column;
     align-items: center;
     margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #F9D342;;
+    background-color: #292826;
 }
 
+#container {
+    background-color: white;
+    padding: 2%;
+}
+
+h1, h2 {
+    margin: 1%;
+}
+
+p {
+    margin: 0;
+    margin: 0 15% 1% 15%;
+}
+
+.buttons {
+    margin: 5%;
+}
+
+button {
+    padding: 0.2rem 2rem 0.2rem 2rem;
+    font-family: 'Proxima N W01 Bold', Arial, sans-serif;
+    color: #292826;
+    border: none;
+    border: 0.1rem #F9D342 solid;
+}
+
+.rainbowPen {
+    background-color: #cdedfd;
+    background-image: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+}
+
+.blackPen {
+    background-color: black;
+    color: #F9D342;
+}
+
+.eraser , .clear {
+    background-color: #F9D342;
+    color: #292826;
+}
+
+.clear {
+    background-color: white;
+}
+
+#gridSize {
+    margin: 2%;
+}
+
+.slider{
+    margin-bottom: 2%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    
+
+    width: 200px;
+    height: 7px;
+    border-radius: 5px;
+    background-image: linear-gradient(#F9D342, #F9D342);
+    background-repeat: no-repeat;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #F9D342;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+  }
+
+  .octocat {
+    width: 2rem;
+    height: 2rem;
+}
+
+.me {
+
+    color: #F9D342;
+    text-decoration: none;
+}

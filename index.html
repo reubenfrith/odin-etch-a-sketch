@@ -15,18 +15,20 @@
 
     <h2>About</h2>
     <p>
-        Select your pen colour, then click on the grid to toggle your pen on or off. If you make a mistake use the eraser or if you want to start over click clear. Go crazy
+        Select your pen, then click and hold your mouse down and move it to draw. 
+        If you make a mistake use the eraser or if you want to start over click Clear All. 
+        Change the granularity of your drawing using the slider. Go crazy
         and let those creative juices flow!
     </p>
 
-    <div>
-        <button id="black_pen" class="pen">Black Pen</button>
+    <div class = "buttons">
+        <button id="black_pen" class="blackPen" >Black Pen</button>
 
-        <button id="rainbow_pen" class="pen">Rainbow Pen</button>
+        <button id="rainbow_pen" class="rainbowPen">Rainbow Pen</button>
 
         <button id="eraser" class="eraser">Eraser</button>
 
-        <button id="clear" class="clear">Clear all</button>
+        <button id="clear" class="clear">Clear All</button>
 
     </div>
 
@@ -36,7 +38,12 @@
 
     <div id="gridSize"></div>
 
+    <div class="slider">
     <input type="range" min="2" max="40" value="15" class="slider" id="dimensions">
-    
+    </div>
+
+    <a href="https://github.com/learner1unknown/odin-etch-a-sketch" target="_blank"><img src="/octocat.png" class="octocat" alt="Github Repo"></a>
+    <div>Made by <a class='me' href='https://twitter.com/reubenfrith' target="_blank">Reuben Frith</a></div>
+
 </body>
 </html>
