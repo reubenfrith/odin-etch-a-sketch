@@ -78,7 +78,7 @@ function clearAll() {
 }
 
 // Add 'click' event listener to Clear All button, when pressed everythomg os erased
-const clear = document.querySelector('.clear');
+const clear = document.querySelector('#clear');
 clear.addEventListener("click", () => clearAll());
 
 
@@ -105,7 +105,7 @@ function erase() {
     }
 }
 // Add 'click' event listener to Eraser button, when pressed eraser is activated
-const eraser = document.querySelector('.eraser');
+const eraser = document.querySelector('#eraser');
 eraser.addEventListener("click", () => erase());
 
 

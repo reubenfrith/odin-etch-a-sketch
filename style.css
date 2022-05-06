@@ -34,6 +34,10 @@ button {
     border: 0.1rem #F9D342 solid;
 }
 
+button:hover{
+    transform: scale(1.08);
+}
+
 .rainbowPen {
     background-color: #cdedfd;
     background-image: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
@@ -44,12 +48,12 @@ button {
     color: #F9D342;
 }
 
-.eraser , .clear {
+#eraser , #clear {
     background-color: #F9D342;
     color: #292826;
 }
 
-.clear {
+#clear {
     background-color: white;
 }
 
@@ -88,8 +92,7 @@ input[type="range"] {
     height: 2rem;
 }
 
-.me {
-
+.link {
     color: #F9D342;
-    text-decoration: none;
+    text-decoration: underline;
 }
