@@ -19,11 +19,11 @@ h1, h2 {
 
 p {
     margin: 0;
-    margin: 0 15% 1% 15%;
+    margin: 0 15% 0 15%;
 }
 
 .buttons {
-    margin: 5%;
+    margin: 2%;
 }
 
 button {
